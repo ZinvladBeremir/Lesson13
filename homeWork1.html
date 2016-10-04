@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var user = {
+            name: 'Vova',
+            age: 28,
+            sayName: function () {
+                alert(this.name);
+            },
+            sayAge: function () {
+                alert(this.age);
+            },
+            setName: function (newName) {
+                this.name = newName;
+                alert(user.name);
+            },
+            setAge: function (newAge) {
+                this.age = newAge;
+                alert(user.age);
+            }
+        };
+
+        var name = prompt('Enter name please.');
+        var age = prompt('Enter age please.');
+
+        user.sayName();
+        user.sayAge();
+        user.setName(name);
+        user.setAge(age);
+    </script>
+</body>
+
+</html>
